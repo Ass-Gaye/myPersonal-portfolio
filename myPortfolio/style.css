@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+#right a img{
+    width: 30px;
+    height: 30px;
+}
+
+#right a span{
+    color: black;
+    text-size-adjust: 2em;
+    font-size: 1em;
+    font-weight: 25px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+    align-items: center;
+}
+
+nav #left a{
+    color: black;
+    font-size: 40px;
+    font-weight: 600px;
+     transition: 0.5s ease;
+}
+
+nav #left a:first-child:hover{
+    background-color: hsl(180, 12%, 22%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav #right a{
+    color: black;
+    margin: 0 10px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+
+nav #right a:last-child{
+    color:white;
+    background-color: hsl(240, 3%, 34%);
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 2em;
+     transition: 0.5s ease;
+}
+
+nav #right a:last-child:hover{
+    background-color: rgb(146, 138, 128);
+}
+
+nav #right a:hover{
+    transition: 0.5s ease;
+   animation-name: linkUp;
+   animation-duration: 2s;
+   
+}
+
+
+
+#myp{
+    margin-bottom: 25px;
+}
+
+#links a img {
+    display: inline-block;
+    margin-top: 40px;
+    height: 35px;
+    width: 35px;
+    
+    
+}
+
+#links a span:hover{
+    color: rgb(34, 33, 33);
+    border: 2px solid rgb(15, 15, 15);
+    background-color: grey;
+}
+
+
+ 
+#links a span {
+    border: 2px solid;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 2em;
+    font-weight: 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+
+#profile img{
+    flex: 2;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+#hero {
+    flex: 5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+   align-items: center;
+   gap: 50px;
+   margin-bottom: 100px;
+}
+
+#hero p{
+    font-size: 22px
+  
+}
+
+
+#hero h2{
+    font-size: 2em;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.skills{
+   padding: 0 50px;
+   margin-bottom: 100px;
+   justify-items: center;
+}
+
+.skills .text{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.skills h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.cells .cell img{ 
+    width: 80px;
+    height: 40px;
+    object-fit: contain;
+
+}
+    
+
+
+.cells .cell span{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px;
+    
+}
+
+.skills .cell{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid rgb(146, 137, 137);
+   border-radius: 5px;
+    
+}
+
+.skills .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 25px;
+
+}
+
+.group .person img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.testimony{
+    padding: 0 50px;
+    margin-bottom: 100px;
+    
+
+}
+
+.testimony .group .person{
+    flex: 2;
+    text-align: center;
+}
+
+.testimony .group .person img{
+    
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimony .text{
+    font-size: 25px;
+    flex: 8;
+}
+
+.testimony h2{
+    align-items: first baseline;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.testimony .group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.testimony .group p{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.testimony .group p:last-child{
+    font-weight: normal;
+}
+
+
+.myContact{
+    padding: 0 50px;
+    margin-bottom: 100px;
+    font-size: 1.5em;
+}
+
+.myContact h2{
+    font-size: 35px;
+}
+
+.myContact .myGroup{
+    display: flex;
+    gap: 50px;
+
+}
+
+.myGroup .myTxt{
+    margin-top: 20px;
+    flex: 3;
+}
+
+.myGroup form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.myGroup form input,
+.myGroup form textarea{
+    font-family: poppins, sans-serif;
+    border: 2px solid rgb(58, 136, 184);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.myGroup form button{
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 50px;
+    transition: 1s;
+}
+
+.myGroup form button:hover{
+    cursor: pointer;
+    background-color: rgb(53, 53, 178);
+}
+
+.testimony .group .person  .status{
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(16, 31, 41);
+    animation-name: status;
+    animation-iteration-count: infinite;
+}
+
+#links{
+    animation-name: grow;
+    animation-duration: 2s;
+}
+
+
+
+#links span:hover{
+    animation-name: blowUp;
+    animation-duration: 2s;
+    transition: 0.5s ease;
+}
+
+
+.right a{
+    transition: 0.5s ease;
+    animation-name: linkUp;
+    animation-duration: 2s;
+}
+
+div.right a:hover{
+    background-color: grey;
+    padding: 20px 5px;
+    animation-name: grow;
+    animation-duration: 2s;
+}
+
+.status span::before{
+    content: "";
+    color: brown;
+    animation-name: status;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.status span::after{
+    content: "";
+    background-color: transparent;
+}
+
+form button a{
+    color: white;
+    font-weight: bold;
+
+}
+
+.footer{
+    background-color: grey;
+    margin-top: 20px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    gap: 20px;
+}
+
+#footer{
+    background-color: grey;
+    margin-top: 20px;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer a{
+
+    text-decoration: none;
+    align-items: center;
+    font-size: 30px;
+    transition: 0.5s ease;
+}
+
+.footer a:hover{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#end{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: center;
+}
+
+@keyframes linkUp{
+    60%{transform: scale(1.5) translateY(-5);}
+ }
+
+
+@keyframes blowUp{
+    40%{transform: scale(1.5);}
+ }
+
+
+@keyframes grow{
+    50%{transform: scale(0.5, 0.5);}
+ }
+
+
+
+
+@keyframes status{
+
+   0%, 20%{
+       content: " A Web Developer";
+   }
+   40%, 60%{
+    content: " A software developer";
+   }
+    60%, 80%{
+        content: " A Programmer";
+    }
+    80%, 100%{
+        content: " A Freelancer";
+    }
+            
+    
+
+}
+
+
+
+
+
+
+@media (max-width: 850px){
+    #hero h2{
+        font-size: 35px;;
+    }
+}
+
+@media (max-width: 740px){
+    .hero{
+        flex-direction: column-reverse;
+        
+    }
+
+    .hero #profile img{
+        width: 300px;
+    }
+
+  .testimony{
+    text-align: center;
+  }
+
+  .testimony .group{
+    flex-direction: column;
+  }
+
+  .myContact .myGroup{
+    flex-direction: column;
+  }
+
+
+
+}
+
+
+
+@media (max-width: 600px){
+    nav {
+        padding: 0 20px;
+    }
+
+    #right a span{
+        display: none;
+    }
+
+    #right a img {
+        size: 25px;
+    }
+
+    nav #right a:last-child {
+        background-color: transparent;
+    }
+
+    .hero{
+        padding: 0 20px;
+    }
+
+    nav #right a:hover{
+   background-color: grey;
+   
+}
+
+#hero h2{
+    font-size: 30px;
+    
+}
+
+
+.skills{
+    padding: 0 20px;
+}
+
+.skills .cells .cell span{
+    font-size: 16px;
+    
+
+    
+}
+
+.testimony{
+    padding: 0 20px;
+}
+
+.myContact{
+    padding: 0 20px;
+}
+
+}
